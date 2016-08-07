@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VMJizer</title>
+    <style>
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Open Sans Condensed';
+            font-style: normal;
+            font-weight: 300;
+            src: url(/fonts/OpenSans-CondLight.ttf);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body, #app {
+            height: 100%;
+            width: 100%;
+            font-family: Open Sans Condensed;
+        }
+
+        .layout {
+            display: flex;
+            height: inherit;
+            width: inherit;
+            background: #00897b;
+        }
+
+        .side-menu {
+            width: 50px;
+            height: inherit;
+            background: #004d40;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .side-menu > ul {
+            padding-top: 50px;
+        }
+
+        .side-menu > ul > li {
+            padding-top: 23px;
+        }
+
+        .side-menu > ul > li > a {
+            color: #b2dfdb;
+        }
+
+        .side-menu > ul > li > a:hover {
+            color: white;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: #b2dfdb;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+            border: 2px solid #00695c;
+            margin: 12px;
+        }
+
+        .dashboard > .header {
+            height: 27px;
+            background: #00695c;
+        }
+
+        .dashboard > .header > .title{
+            font-size: 18px;
+            color: #b2dfdb;
+            margin-left: 5px;
+        }
+
+        .widgets {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 12px;
+        }
+
+        .widget{
+            height: 50%;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+            border: 2px solid #00695c;
+            margin-bottom: 12px;
+        }
+
+        .widget > .header {
+            height: 27px;
+            background: #00695c;
+        }
+
+        .widget > .header > .title{
+            font-size: 18px;
+            color: #b2dfdb;
+            margin-left: 5px;
+        }
+
+
+        /* Accordion */
+
+        .accordion {
+            border: solid 1px #000;
+            border-bottom-width: 0;
+        }
+        .accordion-section {
+            border-bottom: solid 1px #000;
+        }
+
+        .accordion-section > h3 {
+            padding: 6px;
+            font-size: 16px;
+            background-color: #CCC;
+            margin: 0;
+        }
+        .accordion-section > .body {
+            height: 0;
+            padding: 0 10px;
+            overflow-y: hidden;
+            transition: height .5s;
+            transition: height .5s, padding-top .5s, padding-bottom .5s;
+        }
+        .accordion-section.selected > .body {
+            height: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="app"></div>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/react/react.min.js"></script>
+    <script src="/js/react/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel" src="jsx/app.jsx"></script>
+
+</body>
+</html>
