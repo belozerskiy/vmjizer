@@ -7,6 +7,9 @@
     "type" : "git"
   , "url" : "https://github.com/belozerskiy/vmjizer"
   },
+  "scripts": {
+    "dev-install": "npm install && cd client && webpack"
+  },
   "dependencies": {
     "express": "latest",
     "mongodb": "latest",
