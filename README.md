@@ -4,6 +4,8 @@
 ![VMJizer UI](https://pp.vk.me/c631223/v631223104/44eec/sMshMlZurt4.jpg)
 
 ####Install and Run
- * Go to vmjizer dir
+ * git clone https://github.com/belozerskiy/vmjizer.git
+ * cd vmjizer
  * npm install
  * node app.js
+
