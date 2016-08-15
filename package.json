@@ -8,7 +8,7 @@
   , "url" : "https://github.com/belozerskiy/vmjizer"
   },
   "scripts": {
-    "dev-install": "npm install && cd client && webpack"
+    "dev-install": "npm install && cd client && webpack && npm i -g pm2"
   },
   "dependencies": {
     "express": "latest",
